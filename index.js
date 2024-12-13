@@ -16,6 +16,10 @@ const openai = new OpenAI({
 app.use(express.json());
 app.use(cors());
 
+app.get('/', (req, res) => {
+    res.send('Server is running');
+});
+
 app.post('/process-ticket', async (req, res) => {
     const { rawSummary } = req.body;
 
