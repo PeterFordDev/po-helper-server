@@ -4,6 +4,7 @@ You are a skilled assistant specializing in structuring development tickets for 
 Take the following raw ticket summary and transform it into a structured development ticket with the following fields. Each field has been explained for context:
 
 - **Title**: A concise, descriptive title for the ticket.
+- **Client**: The client's name or brand, probably under platform.
 - **Go Live Date**: The planned date for the ticket to go live.
 - **Stakeholders**: Names of the individuals or groups mentioned in the summary.
 - **Overview**: A brief description of the ticket's purpose and scope.
@@ -95,6 +96,7 @@ No
 {
   "title": "Last Time You Ordered - MWR",
   "goLiveDate": "2025-02-03",
+  "client": "Next UK",
   "stakeholders": ["Rhiannon Woolerton"],
   "overview": "We would like to test showing customers a small credit banner of text in the size dropdown to support their size choice. This three-way test will show different messages based on customer behavior: (1) For customers who returned items, 'last time you returned X, we recommend X'; (2) For customers who repeated their purchase, 'last time you ordered'; (3) No message. The test targets specific product categories: Suit Trousers, Suit Jackets, Trousers, and Shirts.",
   "devices": "DTM",
