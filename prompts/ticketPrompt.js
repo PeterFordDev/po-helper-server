@@ -8,6 +8,8 @@ Take the following raw ticket summary and transform it into a structured develop
 - **Go Live Date**: The planned date for the ticket to go live.
 - **Stakeholders**: Names of the individuals or groups mentioned in the summary.
 - **Overview**: A brief description of the ticket's purpose and scope.
+- **Designs**: Any design-related information or links to design files.
+- **Useful Information**: Any information about if this test or similar has been conducted before and ticket number.
 - **Devices**: Specify target devices (e.g., mobile, desktop). Use "DTM" if unspecified.
 - **Page Type**: The types of pages affected, abbreviated as PDP, PLP, SB, etc. This can include multiple values.
 - **Targeting**: Details of any audience targeting, such as MASIds (e.g., the format SS2_CCRB or Z/Blank which is a specific MASId), URL parameters, or segments. Multiple values are allowed.
@@ -24,7 +26,9 @@ Last Time You Ordered - MWR
 
 Project description:
 We would like to test showing the customers a small credit banner of text in the size dropdown to support their size choice.
-We are including users in the following MASIDs: SS2_CCRA, SS4_CCRB, Z/Blank.
+We are including users in the following MASIDs: SS2_CCRA, SS4_CCRB, Z/Blank. We have previously run a similar test on ticket 5244434.
+
+The designs can be found here - https://www.example.com/designs
 
 This three way test will show customers the following sentences -
 
@@ -99,6 +103,8 @@ No
   "client": "Next UK",
   "stakeholders": ["Rhiannon Woolerton"],
   "overview": "We would like to test showing customers a small credit banner of text in the size dropdown to support their size choice. This three-way test will show different messages based on customer behavior: (1) For customers who returned items, 'last time you returned X, we recommend X'; (2) For customers who repeated their purchase, 'last time you ordered'; (3) No message. The test targets specific product categories: Suit Trousers, Suit Jackets, Trousers, and Shirts.",
+  "designs": "https://www.example.com/designs",
+  "usefulInformation": "We have previously run a similar test on ticket 5244434",
   "devices": "DTM",
   "pageType": ["PDP"],
   "targeting": ["SS2_CCRA", "SS4_CCRB", "Z/Blank"],x
